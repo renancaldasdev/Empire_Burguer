@@ -6,6 +6,10 @@
   box-sizing: border-box;
 }
 
+body {
+  padding-bottom: 800px;
+}
+
 :root {
   --font-title: "Lato", sans-serif;
   --font-text: "Lilita One", cursive;
@@ -114,7 +118,7 @@
   background: var(--color-yellow);
   padding: 8px 16px;
   border-radius: 4px;
-  /* height: 34px; */
+  text-decoration: none;
 }
 
 .contact-whats p {
@@ -191,7 +195,6 @@
   display: flex;
   width: 60rem;
   align-items: center;
-  justify-content: space-between;
   gap: 18px;
   padding: 26px 20px;
 
@@ -210,6 +213,16 @@
   display: flex;
   gap: 18px;
   align-items: center;
+  position: relative;
+}
+
+.banner-info--content:nth-child(2)::after,
+.banner-info--content:nth-child(2)::before {
+  content: " ";
+  width: 1px;
+  height: 80px;
+  background-color: rgba(73, 46, 21, 0.15);
+  margin: 0 20px;
 }
 
 .banner-info--img {
@@ -251,4 +264,45 @@
   color: rgba(29, 6, 5, 0.69);
 
   opacity: 0.6;
+}
+
+.principal {
+  padding-top: 130px;
+}
+
+.ofertas-especiais h2 {
+  font-family: var(--font-text);
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 35px;
+  text-transform: uppercase;
+
+  color: rgba(29, 6, 5, 0.9);
+}
+
+.ofertas-especiais p {
+  font-family: var(--font-title);
+  font-size: var(--font-size-text2);
+  line-height: 22px;
+  color: rgba(29, 6, 5, 0.69);
+}
+
+.ofertas-galeria {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+    "principal secundaria"
+    "principal terciaria";
+  margin-top: 16px;
+}
+
+.oferta-principal {
+  grid-area: principal;
+}
+.oferta-secundaria {
+  grid-area: secundaria;
+}
+.oferta-terciaria {
+  grid-area: terciaria;
 }
