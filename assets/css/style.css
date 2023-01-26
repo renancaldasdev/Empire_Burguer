@@ -1,0 +1,128 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Lilita+One&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --font-title: "Lato", sans-serif;
+  --font-text: "Lilita One", cursive;
+  --font-size-h1: 2rem;
+  --font-size-h2: 1.5625rem;
+  --font-size-h3: 1.25rem;
+  --font-size-h4: 1.125rem;
+
+  --font-size-text1: 1.125rem;
+  --font-size-text2: 1rem;
+  --font-size-text3: 0.875rem;
+  --font-size-text4: 0.75rem;
+
+  --color-red: #f43127;
+  --color-yellow: #f59a1b;
+  --color-beige: #fae2cb;
+  --color-title-black-38: rgba(29, 6, 5, 0.4);
+  --color-brown: #3b200b;
+  --color-title-black-87: #34201f;
+  --color-title-black-60: #635352;
+}
+
+.container {
+  max-width: 1170px;
+  margin: 0 auto;
+}
+
+.banner-hero {
+  background: url("../banner-hero.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 545px;
+}
+
+header > div {
+  background: rgba(59, 32, 11, 0.05);
+  backdrop-filter: blur(5px);
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 0;
+}
+
+.navigation {
+  display: flex;
+  align-items: center;
+  gap: 60px;
+}
+
+.navigation .menu ul {
+  list-style: none;
+  display: flex;
+  gap: 16px;
+}
+
+.navigation .menu ul a {
+  text-decoration: none;
+  font-family: var(--font-title);
+  line-height: 25px;
+  font-size: var(--font-size-text1);
+  color: var(--color-title-black-60);
+}
+
+.navigation .menu ul a.active {
+  font-weight: 700;
+  line-height: 25px;
+  color: var(--color-title-black-87);
+}
+
+.contact {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 26px;
+}
+
+.contact-icon {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.contact-icon img {
+  width: 27px;
+}
+
+.contact-icon::after {
+  content: "";
+  display: block;
+  height: 47px;
+  width: 1px;
+  background-color: #b50b04;
+}
+
+.contact-whats {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  background: var(--color-yellow);
+  padding: 8px 16px;
+  border-radius: 4px;
+  /* height: 34px; */
+}
+
+.contact-whats p {
+  font-family: var(--font-title);
+  font-weight: 700;
+  font-size: var(--font-size-text2);
+  line-height: 25px;
+  color: var(--color-title-black-87);
+}
+
+.contact-whats img {
+  width: 24px;
+}
