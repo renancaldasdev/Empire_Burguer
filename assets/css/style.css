@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Lilita+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
 
 * {
   margin: 0;
@@ -7,7 +8,7 @@
 }
 
 body {
-  padding-bottom: 800px;
+  background-color: #faf3f2;
 }
 
 :root {
@@ -79,7 +80,7 @@ body {
   color: var(--color-title-black-60);
 }
 
-.navigation .menu ul a.active {
+.active {
   font-weight: 700;
   line-height: 25px;
   color: var(--color-title-black-87);
@@ -305,4 +306,168 @@ body {
 }
 .oferta-terciaria {
   grid-area: terciaria;
+}
+
+.horario-funcionamento {
+  display: flex;
+  align-items: center;
+  margin-top: 64px;
+  gap: 30px;
+}
+
+.horario-funcionamento-details {
+  display: flex;
+  gap: 30px;
+  background-color: var(--color-red);
+  border-radius: 10px;
+  width: 570px;
+  padding: 18px 22px;
+}
+
+.horario-funcionamento-details .icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(29, 6, 5, 0.2);
+  width: 94px;
+  height: 94px;
+  border-radius: 50%;
+}
+
+.description h3 {
+  font-family: var(--font-text);
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 28px;
+  text-transform: uppercase;
+  color: rgba(29, 6, 5, 0.69);
+  margin-bottom: 6px;
+}
+
+.icon {
+  position: relative;
+}
+
+.icon::after {
+  content: "";
+  height: 90px;
+  width: 1px;
+  background-color: rgba(29, 6, 5, 0.4);
+  position: absolute;
+  left: 108px;
+}
+
+.description {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.description p {
+  font-family: var(--font-title);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 22px;
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.horario-funcionamento-insta p:first-child {
+  font-family: var(--font-title);
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 25px;
+  color: rgba(29, 6, 5, 0.69);
+}
+.horario-funcionamento-insta p:last-child {
+  font-family: var(--font-text);
+  margin-top: 5px;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 28px;
+  color: var(--color-red);
+}
+
+.onde-fica-title {
+  margin-top: 100px;
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.onde-fica-title h2 {
+  font-family: var(--font-text);
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 35px;
+  text-transform: uppercase;
+  color: rgba(29, 6, 5, 0.9);
+  margin-bottom: 4px;
+}
+
+.onde-fica-title p {
+  font-family: var(--font-title);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: rgba(29, 6, 5, 0.69);
+}
+
+.onde-fica-nosso-castelo iframe {
+  width: 100vw;
+  height: 200px;
+}
+
+.footer-content {
+  margin-top: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 28px;
+}
+
+.menu-sociais {
+  display: flex;
+  gap: 150px;
+  text-align: center;
+}
+
+.footer-content .menu ul {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+}
+
+.footer-content .menu ul a {
+  text-decoration: none;
+  display: block;
+  font-family: var(--font-title);
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 25px;
+  color: #3a210b;
+}
+
+.footer-sociais {
+  display: flex;
+  gap: 12px;
+}
+
+.footer-sociais img {
+  height: 27px;
+}
+
+.footer-copy {
+  padding: 12px 0;
+  text-align: center;
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  line-height: 19px;
+  font-weight: 400;
+  color: rgba(2, 14, 31, 0.3);
+  border-top: 1px solid rgba(29, 6, 5, 0.15);
+}
+
+.footer-copy span {
+  font-weight: 700;
+  color: rgba(2, 14, 31, 0.69);
 }
