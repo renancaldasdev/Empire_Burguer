@@ -1,0 +1,122 @@
+@media (max-width: 450px) {
+  .container {
+    max-width: 380px;
+    padding: 0;
+  }
+  .menu,
+  .contact {
+    display: none;
+  }
+
+  .banner-hero {
+    background: url("../banner-mobile.png");
+    height: 855px;
+  }
+
+  .banner-text {
+    margin-top: 36px;
+  }
+
+  .banner-text h3 {
+    font-size: 18px;
+  }
+
+  .banner-text h1 {
+    font-size: 50px;
+    line-height: 59px;
+  }
+
+  .banner-text p {
+    font-size: 16px;
+  }
+
+  .banner-text p span {
+    padding: 0 2px;
+  }
+
+  .banner-text a {
+    font-size: 16px;
+    padding: 6px 16px;
+  }
+
+  .banner-info {
+    width: 355px;
+    bottom: -380px;
+    flex-direction: column;
+  }
+
+  .banner-info--content:nth-child(2) {
+    border: none;
+    border-top: 1px solid rgba(73, 46, 21, 0.15);
+    border-bottom: 1px solid rgba(73, 46, 21, 0.15);
+    padding: 20px 0;
+  }
+
+  .banner-info--desc {
+    width: 190px;
+  }
+
+  .banner-info--desc h3 {
+    font-size: 20px;
+    margin-bottom: 8px;
+  }
+
+  .banner-info--desc p {
+    font-size: 16px;
+  }
+
+  .principal {
+    padding-top: 280px;
+  }
+
+  .ofertas-especiais h2 {
+    font-size: 25px;
+    line-height: 28px;
+  }
+
+  .ofertas-especiais p {
+    font-size: 16px;
+  }
+
+  .ofertas-galeria {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+  .ofertas-galeria img {
+    max-width: 379px;
+  }
+
+  .principal-top {
+    top: 13px;
+  }
+
+  .principal-top p {
+    font-size: 20px;
+    line-height: 23px;
+  }
+
+  .principal-bottom {
+    bottom: 16px;
+    right: 16px;
+  }
+
+  .principal-bottom span {
+    font-size: 10px;
+    line-height: 12px;
+  }
+
+  .principal-bottom p {
+    font-size: 20px;
+    line-height: 13px;
+    margin-top: 3px;
+  }
+
+  .horario-funcionamento {
+    flex-direction: column;
+  }
+
+  .horario-funcionamento-details {
+    max-width: 380px;
+  }
+}

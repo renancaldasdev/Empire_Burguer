@@ -6,6 +6,13 @@
   padding: 0;
   box-sizing: border-box;
 }
+html {
+  scroll-behavior: smooth;
+}
+img {
+  display: block;
+  width: 100%;
+}
 
 body {
   background-color: #faf3f2;
@@ -194,8 +201,10 @@ body {
 
 .banner-info {
   display: flex;
-  width: 60rem;
+  width: 970px;
   align-items: center;
+  justify-content: space-between;
+
   gap: 18px;
   padding: 26px 20px;
 
@@ -214,16 +223,12 @@ body {
   display: flex;
   gap: 18px;
   align-items: center;
-  position: relative;
 }
 
-.banner-info--content:nth-child(2)::after,
-.banner-info--content:nth-child(2)::before {
-  content: " ";
-  width: 1px;
-  height: 80px;
-  background-color: rgba(73, 46, 21, 0.15);
-  margin: 0 20px;
+.banner-info--content:nth-child(2) {
+  border-right: 1px solid rgba(73, 46, 21, 0.15);
+  border-left: 1px solid rgba(73, 46, 21, 0.15);
+  padding: 0 50px;
 }
 
 .banner-info--img {
@@ -242,7 +247,7 @@ body {
 }
 
 .banner-info--desc {
-  max-width: 160px;
+  width: 170px;
 }
 
 .banner-info--desc h3 {
@@ -300,12 +305,76 @@ body {
 
 .oferta-principal {
   grid-area: principal;
+  position: relative;
 }
+
+.principal-top {
+  position: absolute;
+  z-index: 999;
+  top: 20px;
+  left: 20px;
+}
+
+.principal-top p {
+  font-family: var(--font-text);
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 28px;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.principal-top span {
+  font-family: var(--font-title);
+  font-size: 18px;
+  line-height: 25px;
+  color: rgba(255, 255, 255, 0.69);
+}
+
+.principal-bottom {
+  position: absolute;
+  z-index: 999;
+  bottom: 25px;
+  right: 25px;
+}
+
+.principal-bottom span {
+  font-family: var(--font-title);
+  font-size: 23px;
+  line-height: 25px;
+  color: rgba(255, 255, 255, 0.69);
+}
+
+.principal-bottom p {
+  font-family: var(--font-text);
+  font-weight: 400;
+  font-size: 42px;
+  line-height: 28px;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.9);
+  margin-top: 6px;
+}
+
 .oferta-secundaria {
   grid-area: secundaria;
+  position: relative;
 }
 .oferta-terciaria {
   grid-area: terciaria;
+  position: relative;
+}
+
+.principal-top.small {
+  top: 15px;
+}
+
+.small p {
+  font-size: 22px;
+  color: rgba(29, 6, 5, 0.9);
+}
+.small span {
+  font-size: 18px;
+  color: rgba(29, 6, 5, 0.9);
 }
 
 .horario-funcionamento {
@@ -320,7 +389,7 @@ body {
   gap: 30px;
   background-color: var(--color-red);
   border-radius: 10px;
-  width: 570px;
+  max-width: 570px;
   padding: 18px 22px;
 }
 
