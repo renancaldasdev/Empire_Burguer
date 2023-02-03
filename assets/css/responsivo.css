@@ -3,9 +3,17 @@
     max-width: 380px;
     padding: 0;
   }
-  .menu,
+  .navigation .menu,
   .contact {
     display: none;
+  }
+
+  .navigation {
+    padding: 16px 0;
+  }
+
+  .menu-mobile {
+    display: flex;
   }
 
   .banner-hero {
@@ -118,5 +126,81 @@
 
   .horario-funcionamento-details {
     max-width: 380px;
+  }
+
+  .horario-funcionamento-details .icon {
+    width: 73px;
+    height: 73px;
+  }
+
+  .icon img {
+    width: 39px;
+  }
+
+  .icon::after {
+    height: 68px;
+    left: 90px;
+  }
+
+  .description {
+    gap: 0;
+  }
+
+  .description h3 {
+    font-size: 16px;
+    margin-bottom: 2px;
+  }
+
+  .description p {
+    font-size: 12px;
+    line-height: 22px;
+  }
+
+  .horario-funcionamento {
+    gap: 0;
+  }
+
+  .horario-funcionamento-insta {
+    margin-top: 64px;
+    text-align: center;
+  }
+
+  .horario-funcionamento-insta p:last-child {
+    font-size: 40px;
+  }
+
+  .onde-fica-title {
+    margin-top: 64px;
+  }
+  .onde-fica-title h2 {
+    font-size: 25px;
+  }
+
+  .footer-content {
+    flex-direction: column;
+  }
+
+  .menu-sociais {
+    width: 100%;
+    border-top: 1px solid rgba(29, 6, 5, 0.15);
+    flex-direction: column-reverse;
+    gap: 0;
+  }
+
+  .footer-sociais {
+    margin: 20px auto 20px auto;
+  }
+  .footer-sociais img {
+    /* width: 27px; */
+  }
+
+  .footer-content .menu ul {
+    border-top: 1px solid rgba(29, 6, 5, 0.15);
+    /* margin-top: 20px; */
+    flex-direction: column;
+  }
+
+  .footer-content .menu ul a {
+    margin-top: 20px;
   }
 }

@@ -88,9 +88,9 @@ body {
 }
 
 .active {
-  font-weight: 700;
-  line-height: 25px;
-  color: var(--color-title-black-87);
+  font-weight: 700 !important;
+  line-height: 25px !important;
+  color: var(--color-title-black-87) !important;
 }
 
 .contact {
@@ -98,6 +98,24 @@ body {
   align-items: center;
   justify-content: space-between;
   gap: 26px;
+}
+
+.menu-mobile {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  align-items: center;
+  justify-content: center;
+  background: rgba(29, 6, 5, 0.15);
+  border-radius: 3px;
+  padding: 8px;
+  display: none;
+}
+
+.menu-mobile div {
+  width: 20px;
+  height: 4px;
+  background: rgba(29, 6, 5, 0.9);
 }
 
 .contact-icon {
@@ -403,14 +421,8 @@ body {
   border-radius: 50%;
 }
 
-.description h3 {
-  font-family: var(--font-text);
-  font-weight: 400;
-  font-size: 25px;
-  line-height: 28px;
-  text-transform: uppercase;
-  color: rgba(29, 6, 5, 0.69);
-  margin-bottom: 6px;
+.icon img {
+  width: 50px;
 }
 
 .icon {
@@ -424,6 +436,16 @@ body {
   background-color: rgba(29, 6, 5, 0.4);
   position: absolute;
   left: 108px;
+}
+
+.description h3 {
+  font-family: var(--font-text);
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 28px;
+  text-transform: uppercase;
+  color: rgba(29, 6, 5, 0.69);
+  margin-bottom: 6px;
 }
 
 .description {
@@ -522,6 +544,7 @@ body {
 }
 
 .footer-sociais img {
+  width: 27px;
   height: 27px;
 }
 
