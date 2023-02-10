@@ -110,6 +110,7 @@ body {
   border-radius: 3px;
   padding: 8px;
   display: none;
+  cursor: pointer;
 }
 
 .menu-mobile div {

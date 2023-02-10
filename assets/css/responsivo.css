@@ -1,6 +1,6 @@
 @media (max-width: 450px) {
   .container {
-    max-width: 380px;
+    max-width: 340px;
     padding: 0;
   }
   .navigation .menu,
@@ -19,6 +19,7 @@
   .banner-hero {
     background: url("../banner-mobile.png");
     height: 855px;
+    background-position: right;
   }
 
   .banner-text {
